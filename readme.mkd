@@ -1,0 +1,22 @@
+# vim-unite-filter-matcher_cmigemo
+
+**vim-unite-filter-matcher_cmigemo** is a Vim plugin to provide a filter for cmigemo.
+
+
+This plugin depends on:
+
+* [unite.vim](https://github.com/Shougo/unite.vim)
+* [cmigemo](https://github.com/koron/cmigemo)
+
+Latest: https://github.com/Jagua/vim-unite-filter-matcher_cmigemo
+
+
+## .vimrc
+
+```vim
+let g:unite_matcher_cmigemo_dicts = ['path/to/migemo-dict']
+" or
+let g:unite_matcher_cmigemo_dicts = ['path/to/migemo-dict', 'path/to/migemo-subdict']
+" set matcher to source.
+call unite#custom#source('line', 'matchers', ['matcher_cmigemo'])
+```
